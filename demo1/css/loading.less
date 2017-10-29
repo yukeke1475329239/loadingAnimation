@@ -1,0 +1,37 @@
+*{
+    margin:0;padding:0;
+}
+.loading{
+    padding:50px;
+    div{
+      width:20px;
+      height:20px;
+      display:inline-block;
+      border-radius:50%;
+      &.load-round1{
+         background:plum;
+         -webkit-animation:round1 3s linear 0s infinite alternate;
+      }
+      &.load-round2{
+         background:pink;
+         -webkit-animation:round2 3s linear 0s infinite alternate;
+      }
+    }
+}
+
+@-webkit-keyframes round1{
+    from{
+       -webkit-transform:scale(0.8);
+    }
+    to{
+       -webkit-transform:scale(1.2);
+    }
+}
+@-webkit-keyframes round2{
+    from{
+       -webkit-transform:scale(1.2);
+    }
+    to{
+       -webkit-transform:scale(0.8);
+    }
+}

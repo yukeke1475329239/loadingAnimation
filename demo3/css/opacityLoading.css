@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.load {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); }
+  .load .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    /*transform:translate3d(-50%,-50%,0);*/ }
+  .load .box {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    transform-origin: 10px 100px; }
+  .load .c1 {
+    transform: rotate(45deg);
+    opacity: 0.125;
+    animation: opacityLoader 1s linear 0.125s infinite; }
+  .load .c2 {
+    transform: rotate(90deg);
+    opacity: 0.25;
+    animation: opacityLoader 1s linear 0.25s infinite; }
+  .load .c3 {
+    transform: rotate(135deg);
+    opacity: 0.375;
+    animation: opacityLoader 1s linear 0.375s infinite; }
+  .load .c4 {
+    transform: rotate(180deg);
+    opacity: 0.5;
+    animation: opacityLoader 1s linear 0.5s infinite; }
+  .load .c5 {
+    transform: rotate(225deg);
+    opacity: 0.625;
+    animation: opacityLoader 1s linear 0.625s infinite; }
+  .load .c6 {
+    transform: rotate(270deg);
+    opacity: 0.75;
+    animation: opacityLoader 1s linear 0.75s infinite; }
+  .load .c7 {
+    transform: rotate(315deg);
+    opacity: 0.875;
+    animation: opacityLoader 1s linear 0.875s infinite; }
+  .load .c8 {
+    transform: rotate(360deg);
+    opacity: 1;
+    animation: opacityLoader 1s linear 1s infinite; }
+
+@keyframes opacityLoader {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=opacityLoading.css.map */

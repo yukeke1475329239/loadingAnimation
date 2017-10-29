@@ -1,0 +1,126 @@
+*{
+    margin:0;padding:0;
+}
+.por(r){
+    position:relative;
+}
+.pos(a){
+    position:absolute;
+}
+.rotates(@deg:90deg){
+    -webkit-transform:rotateZ(@deg);
+    -moz-transform:rotateZ(@deg);
+    -o-transform:rotateZ(@deg);
+    -ms-transform:rotateZ(@deg);
+    transform:rotateZ(@deg);
+}
+.transAnit(@prop:all,@speed:0.5s){
+    -webkit-transition:@prop @speed;
+    -moz-transition:@prop @speed;
+    -o-transition:@prop @speed;
+    -ms-transition:@prop @speed;
+    transition:@prop @speed;
+}
+@-webkit-keyframes loadingRound{
+    0%{
+       -webkit-transform:rotate(0deg);
+    }
+    100%{
+       -webkit-transform:rotate(720deg);
+    }
+}
+@-moz-keyframes loadingRound{
+    0%{
+       -moz-transform:rotate(0deg);
+    }
+    100%{
+       -moz-transform:rotate(720deg);
+    }
+}
+@-o-keyframes loadingRound{
+    0%{
+       -o-transform:rotate(0deg);
+    }
+    100%{
+       -o-transform:rotate(720deg);
+    }
+}
+@-ms-keyframes loadingRound{
+    0%{
+       -ms-transform:rotate(0deg);
+    }
+    100%{
+       -ms-transform:rotate(720deg);
+    }
+}
+@keyframes loadingRound{
+    0%{
+       transform:rotate(0deg);
+    }
+    100%{
+       transform:rotate(720deg);
+    }
+}
+.loading{
+    width:100px;
+    height:100px;
+    .por(r);
+    display:inline-block;
+    .transAnit();
+    &:hover{
+      .rotates(720deg)
+    }
+   // -webkit-animation:loadingRound 0.5s ease-in infinite;
+}
+.loading-leaf{
+    width:20px;
+    .pos(a);
+    left:40px;
+    -webkit-transform-origin:center bottom;
+    div{
+      border-radius:50%;
+      margin:0 auto;
+    }
+}
+
+.loading-leaf1{
+    div{
+       background:#00FFFF;
+    }
+}
+.loading-leaf2{
+   .rotates();
+    div{
+       background:plum;
+    }
+}
+.loading-leaf3{
+   .rotates(180deg);
+    div{
+       background:pink;
+    }
+}
+.loading-leaf4{
+   .rotates(270deg);
+    div{
+       background:yellow;
+    }
+}
+.round(@w:20px,@h:20px,@a:1){
+    width:@w;
+    height:@h;
+    opacity:@a;
+}
+
+.loading-round1{
+    .round()
+}
+.loading-round2{
+    .round(15px,15px,0.8)
+}
+.loading-round3{
+    .round(10px,10px,0.5)
+}
+.loading-round4{
+    .round(5px,5px,0.3)
+}

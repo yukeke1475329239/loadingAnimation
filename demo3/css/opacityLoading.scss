@@ -1,0 +1,50 @@
+*{
+    margin:0;padding:0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.load{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,.7);
+    .loading{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        margin:-100px 0 0 -100px;
+        /*transform:translate3d(-50%,-50%,0);*/
+        
+    }
+    .box{
+        width: 20px;
+        height: 20px;
+        background:yellow;
+        border-radius:100%;
+        position: absolute;
+        top: 0;
+        left: 90px;
+        transform-origin:10px 100px;
+       }
+       @for $i from 1 to 9{
+         .c#{$i}{
+            transform:rotate($i*45deg);
+            opacity: 0.125*$i;
+            animation:opacityLoader 1s linear $i*0.125s infinite;
+         }
+       }
+}
+@keyframes opacityLoader{
+    0%{
+       opacity: 0;  
+    }
+    100%{
+        opacity:1;
+    }
+}

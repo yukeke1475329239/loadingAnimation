@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@-webkit-keyframes loadingRound {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+  }
+}
+@-moz-keyframes loadingRound {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(720deg);
+  }
+}
+@-o-keyframes loadingRound {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(720deg);
+  }
+}
+@-ms-keyframes loadingRound {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(720deg);
+  }
+}
+@keyframes loadingRound {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.loading {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.loading:hover {
+  -webkit-transform: rotateZ(720deg);
+  -moz-transform: rotateZ(720deg);
+  -o-transform: rotateZ(720deg);
+  -ms-transform: rotateZ(720deg);
+  transform: rotateZ(720deg);
+}
+.loading-leaf {
+  width: 20px;
+  position: absolute;
+  left: 40px;
+  -webkit-transform-origin: center bottom;
+}
+.loading-leaf div {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.loading-leaf1 div {
+  background: #00FFFF;
+}
+.loading-leaf2 {
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -o-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+.loading-leaf2 div {
+  background: plum;
+}
+.loading-leaf3 {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.loading-leaf3 div {
+  background: pink;
+}
+.loading-leaf4 {
+  -webkit-transform: rotateZ(270deg);
+  -moz-transform: rotateZ(270deg);
+  -o-transform: rotateZ(270deg);
+  -ms-transform: rotateZ(270deg);
+  transform: rotateZ(270deg);
+}
+.loading-leaf4 div {
+  background: yellow;
+}
+.loading-round1 {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+.loading-round2 {
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
+}
+.loading-round3 {
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+.loading-round4 {
+  width: 5px;
+  height: 5px;
+  opacity: 0.3;
+}
